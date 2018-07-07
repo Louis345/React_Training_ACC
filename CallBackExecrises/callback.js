@@ -8,7 +8,7 @@ doHomeWork = (subject, callback) => {
 completedAssignment = subject => {
   console.log(`I just finished my assignment in ${subject}`);
 };
-
+console.log('test');
 doHomeWork('math', completedAssignment);
 
 module.exports = {

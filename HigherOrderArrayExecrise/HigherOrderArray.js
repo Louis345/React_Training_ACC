@@ -1,0 +1,4 @@
+forEach = () => {};
+module.exports = {
+  forEach
+};
