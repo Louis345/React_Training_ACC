@@ -5,12 +5,10 @@ const expect = chai.expect;
 chai.use(require('sinon-chai'));
 const { doHomeWork, completedAssignment } = require('../callback.js');
 
-describe('computation', () => {
+describe('to test the implementation of callbacks', () => {
   it('the callback is correctly called', () => {
-    doHomeWork('math', () => {});
     var callback = sinon.spy();
-
-    console.log(doHomeWork('math', callback));
-    console.log(callback);
+    doHomeWork('test', callback);
+    expect(callback.calledOnce).to.equal(true);
   });
 });
