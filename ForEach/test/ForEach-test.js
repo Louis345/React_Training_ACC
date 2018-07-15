@@ -32,5 +32,4 @@ describe.only('testing the functionalitly of Higher Order Arrays ', () => {
     const evenNumbers = onlyEvenValues([2, 3, 4, 5]);
     expect(evenNumbers).to.be.equalTo([2, 4]);
   });
-  i;
 });
