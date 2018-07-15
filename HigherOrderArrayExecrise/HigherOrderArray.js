@@ -16,18 +16,6 @@ map = (arr, callback) => {};
 filter = (arr, callback) => {};
 
 /*
-* You must use ForEach
-Write a function called doubleValues which accepts an array and returns a new array with all the
- values in the array passed to the function doubled
- * 
-Examples:
-    doubleValues([1,2,3]) // [2,4,6]
-    doubleValues([1,-2,-3]) // [2,-4,-6]
-*/
-
-function doubleValues(arr) {}
-
-/*
 Write a function called onlyEvenValues which accepts an array and returns a new array with only the even values in the array passed to the function
 
 Examples:

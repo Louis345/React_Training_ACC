@@ -1,10 +1,3 @@
-/** for Each function should accept an array and a callback as arguments */
-forEach = (arr, callback) => {
-  for (let i = 0; i < arr.length; i++) {
-    callback(arr[i], i, arr);
-  }
-};
-
 /*** Write FindIndex from scartch  */
 findIndex = (arr, callback, index) => {
   for (let i = 0; i < arr.length; i++) {

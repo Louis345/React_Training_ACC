@@ -16,3 +16,11 @@ function showFirstAndLast(arr) {
   });
   return firstAndLast;
 }
+
+function doubleValues(arr) {
+  const doubledValues = [];
+  arr.forEach((number, idx) => {
+    doubledValues.push(number * 2);
+  });
+  return doubledValues;
+}
