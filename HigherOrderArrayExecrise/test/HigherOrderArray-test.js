@@ -48,7 +48,7 @@ describe('testing the functionalitly of Higher Order Arrays ', () => {
     const multipliedArr = valTimesIndex([1, 2, 3]);
     expect(multipliedArr).to.be.equalTo([0, 2, 6]);
   });
-  it.only('the user created filter array should return a new array with values below 21', () => {
+  it('the user created filter array should return a new array with values below 21', () => {
     const lowerThanTwentyOne = filter([10, 15, 20, 25, 30, 60], number => {
       if (number < 21) {
         return number;
