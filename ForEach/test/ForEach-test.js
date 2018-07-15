@@ -12,16 +12,20 @@ const {
   onlyEvenValues
 } = require('../forEach');
 
-describe('testing the functionalitly of Higher Order Arrays ', () => {
-  it('should  have a length of 30', () => {
+describe.only('testing the functionalitly of Higher Order Arrays ', () => {
+  it('should have a length of 3', () => {
     let numbersDoubled = [];
     forEach([1, 2, 3], number => {
       numbersDoubled.push(number * 2);
     });
     expect(numbersDoubled.length).to.equal(3);
   });
-  it.only('it should print only the first and last letter of a name', () => {
+  it('it should print only the first and last letter of a name', () => {
     const abbreviatedName = showFirstAndLast(['colt', 'matt', 'tim', 'udemy']);
     expect(abbreviatedName).to.be.equalTo(['ct', 'mt', 'tm', 'uy']);
+  });
+  it('it should only return even numbers from an array', () => {
+    const evenNumbers = onlyEvenValues([2, 3, 4, 5]);
+    expect(evenNumbers).to.be.equalTo([2, 4]);
   });
 });

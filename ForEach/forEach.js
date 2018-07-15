@@ -11,13 +11,7 @@ Examples:
     doubleValues([1,-2,-3]) // [2,-4,-6]
 */
 
-function doubleValues(arr) {
-  const doubledValues = [];
-  arr.forEach((number, idx) => {
-    doubledValues.push(number * 2);
-  });
-  return doubledValues;
-}
+function doubleValues(arr) {}
 
 /*
 Write a function called showFirstAndLast which accepts an array of strings and returns a new array with only the first and last character of each string.
