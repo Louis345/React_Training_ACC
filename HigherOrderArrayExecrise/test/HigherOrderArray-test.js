@@ -33,13 +33,6 @@ describe('testing the functionalitly of Higher Order Arrays ', () => {
     const evenNumbers = onlyEvenValues([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     expect(evenNumbers).to.be.equalTo([2, 4, 6, 8, 10]);
   });
-  it('testing users created map function and that function should return an array of tripled values', () => {
-    const tripledValues = map([1, 2, 3], number => {
-      console.log(number);
-      return number * 3;
-    });
-    expect(tripledValues).to.be.equalTo([3, 6, 9]);
-  });
   it('users created function should return an array with its values doubled', () => {
     const doubledValues = doubleValues([1, 2, 3]);
     expect(tripledValues).to.be.equalTo([2, 4, 6]);

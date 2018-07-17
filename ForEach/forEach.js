@@ -1,5 +1,9 @@
 /** for Each function should accept an array and a callback as arguments */
-forEach = (arr, callback) => {};
+forEach = (arr, callback) => {
+  for (let i = 0; i < arr.length; i++) {
+    callback(arr[i], i, arr);
+  }
+};
 
 /*
 * You must use ForEach
