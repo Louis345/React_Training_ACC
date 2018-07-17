@@ -12,13 +12,19 @@ const {
   onlyEvenValues
 } = require('../forEach');
 
-describe.only('testing the functionalitly of Higher Order Arrays ', () => {
+describe('testing the functionalitly of Advanced Arrays ', () => {
   it('testing forEach', () => {
     let numbersDoubled = [];
-    forEach([1, 2, 3], number => {
+    let suppliedArr = [];
+    let arrIndex = [];
+    forEach([1, 2, 3], (number, idx, arr) => {
+      arrIndex.push(idx);
       numbersDoubled.push(number * 2);
+      suppliedArr = arr;
     });
-    expect(numbersDoubled.length).to.equal(3);
+    expect(arrIndex).to.be.equalTo([0, 1, 2]);
+    expect(suppliedArr).to.be.equalTo([1, 2, 3]);
+    expect(numbersDoubled).to.be.equalTo([2, 4, 6]);
   });
   it('it should double all values inside an array', () => {
     const doubledValues = doubleValues([2, 4, 6]);

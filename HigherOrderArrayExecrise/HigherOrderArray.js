@@ -1,17 +1,6 @@
-/** for Each function should accept an array and a callback as arguments */
-forEach = (arr, callback) => {};
-
 /*** Write FindIndex from scartch  */
 
 findIndex = (arr, callback, index) => {};
-
-/*** Write the Map Function from  */
-map = (arr, callback) => {};
-
-/***
- * Create the filter array from scratch
- *
- */
 
 filter = (arr, callback) => {};
 
@@ -26,15 +15,6 @@ Examples:
 
 function onlyEvenValues(arr) {}
 
-/*
-Write a function called doubleValues which accepts an array and returns a new array with all the values in the array passed to the function doubled
-
-Examples:
-    doubleValues([1,2,3]) // [2,4,6]
-    doubleValues([5,1,2,3,10]) // [10,2,4,6,20]
-
-*/
-function doubleValues(arr) {}
 /*
 Write a function called valTimesIndex which accepts an array and returns a new array with each value multiplied by the index it is currently at in the array.
 
@@ -69,8 +49,6 @@ module.exports = {
   findIndex,
   onlyEvenValues,
   onlyEvenValues,
-  doubleValues,
-  map,
   valTimesIndex,
   filter,
   doubleOddNumbers,
