@@ -1,11 +1,5 @@
 /*** Write the Map Function from  */
-map = (arr, callback) => {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    newArr.push(callback(arr[i], i, arr));
-  }
-  return newArr;
-};
+map = (arr, callback) => {};
 
 /*
 Write a function called doubleValues which accepts an array and returns a new array with all the values in the array passed to the function doubled
@@ -26,8 +20,18 @@ Examples:
 
 function extractKey(arr, key) {}
 
+/*
+Write a function called valTimesIndex which accepts an array and returns a new array with each value multiplied by the index it is currently at in the array.
+
+Examples:
+    valTimesIndex([1,2,3]) // [0,2,6]
+    valTimesIndex([1,-2,-3]) // [0,-2,-6]
+*/
+function valTimesIndex(arr) {}
+
 module.exports = {
   map,
   doubleValues,
-  extractKey
+  extractKey,
+  valTimesIndex
 };
