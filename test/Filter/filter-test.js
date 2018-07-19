@@ -8,7 +8,7 @@ const {
   filter,
   onlyEvenValues,
   removeVowels
-} = require('../../execrises/Filter/filter');
+} = require('../../excercises/Filter/filter');
 
 describe('testing filter Array method', () => {
   let arrIndex = [];
@@ -29,7 +29,7 @@ describe('testing filter Array method', () => {
     const evenNumberonlyEvenValues = onlyEvenValues([1, 2, 3, 4, 5, 6, 7, 8]);
     expect(evenNumberonlyEvenValues).to.be.equalTo([2, 4, 6, 8]);
   });
-  it.only('should return a string without any vowels being present', () => {
+  it('should return a string without any vowels being present', () => {
     const noVowels = removeVowels('Jamal');
     expect(noVowels).to.be.equal('Jml');
   });

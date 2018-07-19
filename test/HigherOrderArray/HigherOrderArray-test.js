@@ -10,7 +10,7 @@ const {
   doubleValues,
 
   filter
-} = require('../HigherOrderArray');
+} = require('../../excercises/HigherOrderArray/HigherOrderArray');
 
 describe('testing the functionalitly of Higher Order Arrays ', () => {
   it('should return the number 3', () => {

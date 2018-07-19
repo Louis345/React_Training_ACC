@@ -6,7 +6,7 @@ chai.use(require('sinon-chai'));
 const {
   doHomeWork,
   completedAssignment
-} = require('../../execrises/callback/callback');
+} = require('../../excercises/callback/callback');
 
 describe('to test the implementation of callbacks', () => {
   it('the callback is correctly called', () => {

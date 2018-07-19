@@ -9,7 +9,7 @@ const {
   doubleValues,
   extractKey,
   valTimesIndex
-} = require('../../execrises/Map/map');
+} = require('../../excercises/Map/map');
 describe('testing the functionality of Advanced map array', () => {
   it('testing users created map function and that function should return an array of tripled values', () => {
     let suppliedArr;

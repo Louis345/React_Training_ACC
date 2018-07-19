@@ -10,7 +10,7 @@ const {
   doubleValues,
   showFirstAndLast,
   onlyEvenValues
-} = require('../../execrises/ForEach/forEach');
+} = require('../../excercises/ForEach/forEach');
 
 describe('testing the functionalitly of Advanced Arrays ', () => {
   it('testing forEach', () => {
