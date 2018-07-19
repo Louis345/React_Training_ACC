@@ -4,7 +4,11 @@ const expect = chai.expect;
 chai.use(require('sinon-chai'));
 const assertArrays = require('chai-arrays');
 chai.use(assertArrays);
-const { filter, onlyEvenValues, removeVowels } = require('../filter');
+const {
+  filter,
+  onlyEvenValues,
+  removeVowels
+} = require('../../execrises/Filter/filter');
 
 describe('testing filter Array method', () => {
   let arrIndex = [];

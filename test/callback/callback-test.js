@@ -3,7 +3,10 @@ var sinon = require('sinon');
 const chai = require('chai');
 const expect = chai.expect;
 chai.use(require('sinon-chai'));
-const { doHomeWork, completedAssignment } = require('../callback.js');
+const {
+  doHomeWork,
+  completedAssignment
+} = require('../../execrises/callback/callback');
 
 describe('to test the implementation of callbacks', () => {
   it('the callback is correctly called', () => {
