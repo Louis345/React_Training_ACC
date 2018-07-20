@@ -1,2 +1,2 @@
-/** Write Reduce from scracth */
-reduce = (arr, callback) => {};
+/** Write Reduce from scracth *
+reduce = (arr, callback) => {}
