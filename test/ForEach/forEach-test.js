@@ -13,11 +13,14 @@ const {
 } = require('../../excercises/ForEach/forEach');
 
 describe('testing the functionalitly of Advanced Arrays ', () => {
-  it('testing forEach', () => {
+  it.only('testing forEach', () => {
+    console.log('here');
     let numbersDoubled = [];
     let suppliedArr = [];
     let arrIndex = [];
     forEach([1, 2, 3], (number, idx, arr) => {
+      console.log('hello');
+      console.log(number);
       arrIndex.push(idx);
       numbersDoubled.push(number * 2);
       suppliedArr = arr;

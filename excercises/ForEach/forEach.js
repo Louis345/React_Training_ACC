@@ -1,5 +1,14 @@
-/** for Each function should accept an array and a callback as arguments */
-forEach = (arr, callback) => {};
+/** for Each function should accept an array and a callback as arguments
+ *  should return an index and the orginal array
+ *
+ */
+forEach = (arr, callback) => {
+  console.log(arr, arr.length);
+  for (let i = 0; i < arr.length; i++) {
+    console.log(i);
+    callback(arr[i], i, arr);
+  }
+};
 
 /*
 * You must use ForEach
