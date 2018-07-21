@@ -11,6 +11,7 @@ const addItems = arr => {};
  * of the item
  **
  */
+
 const generateTally = arr => {};
 
 /** create a function that accepts an array and returns a f
