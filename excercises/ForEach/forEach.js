@@ -2,13 +2,7 @@
  *  should return an index and the orginal array
  *
  */
-forEach = (arr, callback) => {
-  console.log(arr, arr.length);
-  for (let i = 0; i < arr.length; i++) {
-    console.log(i);
-    callback(arr[i], i, arr);
-  }
-};
+forEach = (arr, callback) => {};
 
 /*
 * You must use ForEach

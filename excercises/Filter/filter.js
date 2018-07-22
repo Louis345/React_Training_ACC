@@ -25,22 +25,7 @@ Examples:
     removeVowels('ZZZZZZ') // ('zzzzzz')
 */
 
-function removeVowels(str) {
-  const noVowels = str.split('').filter((letter, idx) => {
-    if (
-      !(
-        letter === 'a' ||
-        letter === 'e' ||
-        letter === 'i' ||
-        letter === 'o' ||
-        letter === 'u'
-      )
-    ) {
-      return letter;
-    }
-  });
-  return noVowels.join('');
-}
+function removeVowels(str) {}
 
 module.exports = {
   filter,
