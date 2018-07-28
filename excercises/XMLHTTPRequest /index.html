@@ -23,16 +23,10 @@
 
 <script>
   btn.addEventListener("click", () => {
-    alert('here')
     const XHR = new XMLHttpRequest();
     XHR.open("GET", "https://api.coindesk.com/v1/bpi/currentprice.json");
     XHR.send();
     XHR.onreadystatechange = function () {
-      if (XHR.readyState === 4 && XHR.status === 200) {
-        const data = JSON.parse(XHR.responseText);
-        document.getElementById("bitcoin").innerText = 'The price is ' + data.bpi.USD.rate;
-        console.log(data.bpi.USD.rate);
-      }
     };
   });
 
