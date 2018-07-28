@@ -1,0 +1,39 @@
+<style>
+  img {
+    height: 200px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    margin: 20px;
+  }
+</style>
+
+<div class="container">
+  <img src="https://i.kym-cdn.com/photos/images/original/001/293/153/4b8.png" size="50" height="50" />
+  <p id="bitcoin">Get Price </p>
+  <button id="btn">Get Price</button>
+</div>
+
+
+<script>
+  btn.addEventListener("click", () => {
+    alert('here')
+    const XHR = new XMLHttpRequest();
+    XHR.open("GET", "https://api.coindesk.com/v1/bpi/currentprice.json");
+    XHR.send();
+    XHR.onreadystatechange = function () {
+      if (XHR.readyState === 4 && XHR.status === 200) {
+        const data = JSON.parse(XHR.responseText);
+        document.getElementById("bitcoin").innerText = 'The price is ' + data.bpi.USD.rate;
+        console.log(data.bpi.USD.rate);
+      }
+    };
+  });
+
+</script>
