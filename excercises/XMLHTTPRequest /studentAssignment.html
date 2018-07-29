@@ -26,13 +26,18 @@
         <div class="linkfooter">
           <p>Select your favorite character</p>
           <select id="dropdown" type="text">
-            <option>Rick</option>
+            <option>Select a character</option>
           </select>
 
         </div>
       </div>
     </div>
 </body>
-<script src="script.js" onload="loadAllCharacters()"></script>
+<script src="script.js"></script>
+<script>
+  (function () {
+    populateDropDown()
+  })()
+</script>
 
 </html>

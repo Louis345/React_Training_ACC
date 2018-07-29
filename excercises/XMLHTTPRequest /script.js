@@ -1,41 +1,26 @@
-/** As a user, I should be greeted with a list of all rick and morty characters
- * As  a user, I should be able to select a character from the dropdown and have that user displayed as an image
- *
+/**
+ * As a user, I should be greeted with a list of all rick and morty characters
+ * As a user, I should be able to select a character from the dropdown and have that user displayed as an image
+ * https://rickandmortyapi.com/documentation/
+ * Helpful link for populating a dropdown
  *
  */
 
 /**
- * Modify this so that it will do something with the data
+ * Fix this so that it will populate the drop down with characters returned in the HTTP request
  */
-function loadAllCharacters() {
-  var characters = null;
+function loadAllCharacters(callback) {
   var XHR = new XMLHttpRequest();
   XHR.open('GET', 'https://rickandmortyapi.com/api/character');
-  XHR.send();
-  XHR.onreadystatechange = function() {
-    if (XHR.readyState === 4 && XHR.status == 200) {
-      var data = JSON.parse(XHR.responseText);
-      characters = data;
-      populateDropDown(data);
-    }
-  };
-  $('#dropdown').change(function() {
-    alert($(this).val());
-    //Code to select image based on selected car id
-  });
-  return characters;
 }
 
-function populateDropDown(data) {
-  $.each(data.results, function(key, value) {
-    $('#dropdown').append(
-      $('<option>test</option>')
-        .val(value.name)
-        .html(value.name)
-    );
-  });
+function populateDropDown(data) {}
+
+function OnchangeUpdateImage() {
+  /*** This fuction should update the image */
+  /**This function should make an additional call to the API and render an image based off of the user's selection */
 }
 
-function OnchangeUpdateImage() {}
-
-// Call on functions here
+/**
+ * Modify this below so that it runs the app
+ */
