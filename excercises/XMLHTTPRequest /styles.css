@@ -17,6 +17,7 @@ body {
   font-family: Futura;
   font-size: 12px;
   text-align: center;
+  height: 100vh;
 }
 
 #main-img {
