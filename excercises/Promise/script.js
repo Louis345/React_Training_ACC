@@ -20,10 +20,7 @@ const loadImage = url => {};
 
 const embedImage = () => {};
 
-/** Do not this code  */
+/** Do not edit this code  */
 
 var image = loadImage();
 
-image.then(image => {
-  embedImage(image);
-});
