@@ -13,8 +13,7 @@ const {
 } = require('../../excercises/ForEach/forEach');
 
 describe('testing the functionalitly of Advanced Arrays ', () => {
-  it.only('testing forEach', () => {
-    console.log('here');
+  it('testing forEach', () => {
     let numbersDoubled = [];
     let suppliedArr = [];
     let arrIndex = [];

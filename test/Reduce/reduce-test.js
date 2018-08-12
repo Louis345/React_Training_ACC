@@ -12,7 +12,7 @@ const {
   arrayToObject
 } = require('../../excercises/Reduce/reduce');
 
-describe.only('testing the functionalitly of Reduce', () => {
+describe('testing the functionalitly of Reduce', () => {
   it('it should add up all the numbers and return the total', () => {
     const total = addItems([1, 2, 3]);
     const negativeTotal = addItems([-10, 5, 5]);
