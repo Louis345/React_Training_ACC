@@ -12,8 +12,8 @@
  * contains information about a person.
  * @return {string} CSV string that you can open in Excel, Numbers or another spreadsheet program
  */
-function writeCsv(people) {}
+function createCsvString(people) {}
 
 module.exports = {
-  writeCsv
+  createCsvString
 };
