@@ -12,7 +12,7 @@
  * contains information about a person.
  * @return {string} CSV string that you can open in Excel, Numbers or another spreadsheet program
  */
-function writeCsv(people) {
+function createCsvString(people) {
   let names = '"Name","Gender","Location","DOB"\n';
   for (let person of people) {
     let values = [];
@@ -27,5 +27,5 @@ function writeCsv(people) {
 }
 
 module.exports = {
-  writeCsv
+  createCsvString
 };
