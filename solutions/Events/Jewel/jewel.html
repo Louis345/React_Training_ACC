@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>addEventListener Example</title>
+    <link href="https://fonts.googleapis.com/css?family=Kirang+Haerang" rel="stylesheet">
+    <link rel="stylesheet" href="jewel.css">
+</head>
+
+<body>
+    <div class="counter" id="counter">
+        0
+    </div>
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-blue.svg" alt="" width="128" height="128" tabindex="-1">
+    <img src="jewel-green.svg" alt="" width="128" height="128" tabindex="-1">
+    <script>
+        (function () {
+            var counter = document.getElementById('counter');
+            var jewels = document.getElementById('img');
+            var count = 0;
+
+            document.addEventListener('click', function (e) {
+                if (e.target.tagName == 'IMG') {
+                    count += 1;
+                    counter.textContent = count;
+                    e.target.parentNode.removeChild(e.target);
+                }
+            });
+        })()
+    </script>
+</body>
+
+</html>

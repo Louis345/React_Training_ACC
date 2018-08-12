@@ -286,3 +286,8 @@ Temporary Items
 
 
 # End of https://www.gitignore.io/api/node,reactnative
+
+# Workspace and Additional Stuff
+design
+NOTES.md
+*.code-workspace
