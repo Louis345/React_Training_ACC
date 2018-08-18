@@ -17,7 +17,7 @@ function createCsvString(people) {
   for (let person of people) {
     let values = [];
     for (let [key, value] of Object.entries(person)) {
-      if (["name", "gender", "location", "dob"].indexOf(key) >= 0) {
+      if (['name', 'gender', 'location', 'dob'].indexOf(key) >= 0) {
         values.push(value);
       }
     }
