@@ -10,9 +10,7 @@
 doHomeWork = () => {
   console.log('I am correctly working on ', subject);
 };
-completedAssignment = subject => {
-  console.log(`I just finished my assignment in ${subject}`);
-};
+
 
 module.exports = {
   doHomeWork,
